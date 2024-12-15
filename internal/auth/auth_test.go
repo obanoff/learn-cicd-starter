@@ -41,7 +41,7 @@ func TestGetAPIKey(t *testing.T) {
 				"Authorization": []string{"Bearerinvalidtoken"},
 			},
 			expected: expected{
-				key: "fail",
+				key: "",
 				err: ErrMalformedAuthHeader,
 			},
 		},
